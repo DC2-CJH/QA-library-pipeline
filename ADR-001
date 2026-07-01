@@ -1,0 +1,26 @@
+ADR-001: Pipeline Architecture
+Date: {{ 29/06/2026 }}
+
+Status: Accepted
+
+Context
+We need to process data from four sources (CSV, JSON, text, Excel) for Newham Public Library and it is known that the data has quality issues and needs to be cleaned before it can be used for analysis.
+
+Decision
+We will use a medallion architecture with three layers:
+
+Bronze - raw data ingested exactly as received
+Silver - cleaned and validated data
+Gold - analysis-ready aggregations
+
+Reasons
+We have a data check after the source data to ensure that the data is as required and complete, if incomplete we fail the load to bronze else if it is complete we pass and process the data into bronze.
+
+Once in bronze we cleanse the data and then would add in additional data checks to again fail if incomplete else they would pass where complete and as required.
+
+Silver layer is our cleansed complete data and this is then used as the source for the gold layers data used by the business and/or within business reporting. 
+
+Consequences
+Raw data is always preserved in bronze - we can reprocess if cleaning logic changes
+Silver is the trust boundary - gold always reads from silver, never bronze
+(add any other consequences you can think of)

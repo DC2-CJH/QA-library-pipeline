@@ -1,14 +1,20 @@
 # Library Data Pipeline
 
+New Line Added as a test
+
+Another test :-)
+
+*** VS Code Test of a change to the file, by adding this line *** 
+
 ![Teaching](https://img.shields.io/badge/module-DE5M5-blue)
 ![Python Version](https://img.shields.io/badge/python-3.9--3.12-blue.svg)
 
-![Open Issues](https://img.shields.io/github/issues/YOUR_USERNAME/YOUR_REPO)
-![Open PRs](https://img.shields.io/github/issues-pr/YOUR_USERNAME/YOUR_REPO)
-![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO)
-![CI Pipeline Badge](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml/badge.svg)
+![Open Issues](https://img.shields.io/github/issues/DC2-CJH/QA-library-pipeline)
+![Open PRs](https://img.shields.io/github/issues-pr/DC2-CJH/QA-library-pipeline)
+![Last Commit](https://img.shields.io/github/last-commit/DC2-CJH/QA-library-pipeline)
+![CI Pipeline Badge](https://github.com/DC2-CJH/QA-library-pipeline/actions/workflows/ci.yml/badge.svg)
 
-<mark>*Replace `YOUR_USERNAME/YOUR_REPO` with your details*</mark>
+<mark>*Replace `DC2-CJH/QA_Test_REPO` with your details*</mark>
 
 ## Project Overview
 [TODO: Describe the library's data quality problem]
@@ -32,8 +38,8 @@ git config --global user.name "Your Name"
 ### Local Development
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/DC2-CJH/QA-library-pipeline.git
+cd QA-library-pipeline
 
 # Create virtual environment
 python -m venv venv
